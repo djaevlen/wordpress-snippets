@@ -3,6 +3,7 @@ A collection of WordPress Snippets
 
 
 ### Get children and their childrens
+It also adds an `active` class to the li
 
 ```HTML
 <?php $id = get_the_ID(); ?>
