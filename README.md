@@ -111,3 +111,13 @@ Need the url_slug() function in the functions.php
 <?php endwhile; endif; ?>
 ```
 
+### Add script to head the quick and right way
+```PHP
+function angularjs_scripts() {  
+    wp_enqueue_script(
+        'angularjs',
+        'https://code.angularjs.org/1.4.7/angular.min.js'
+    );
+}
+add_action( 'wp_enqueue_scripts', 'angularjs_scripts' );
+```
