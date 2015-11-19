@@ -27,7 +27,6 @@ $nyheder = new WP_Query( $args ); ?>
 ### Get content from an page, single or CPT
 
 ```PHP
-
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 	<h1 class="h2 title"><?php the_title(); ?></h1>
 	<?php the_content(); ?>
